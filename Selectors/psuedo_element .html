@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psedo Element selector</title>
+    <style>
+        p::first-letter{
+            color: red;
+        }
+        p::first-line{
+           color: green;
+        }      
+        p::selection{
+            color: red;
+            background-color: black;
+        }
+        p::after{
+            /* content: "======> Thank You"; */
+            content: url(https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/MESSI.jpg);
+        }
+        p::before{
+            content: "hiiiiiiiiiiiiiiii";
+        }
+        ul>li::marker{
+            /* color: blue; */
+            content: "💗";
+        }
+        input::placeholder{
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum non officia commodi? Delectus vero illo aut, aspernatur at iusto tempore ex eligendi quisquam deserunt amet reiciendis eaque iure ea deleniti est quam eveniet quas adipisci corrupti! Est, veritatis harum, modi doloribus autem ex quis cumque molestiae, quas ab sed exercitationem quidem voluptate impedit explicabo debitis illo facilis delectus perspiciatis eligendi excepturi magni animi. Autem magni aperiam necessitatibus minima laborum dolorum repudiandae officiis consequatur, incidunt, in dolores enim et tempore culpa odit nihil voluptatibus suscipit repellat magnam, placeat inventore obcaecati natus atque libero. Commodi aliquam saepe nostrum officia accusantium provident dolore.</p>
+    <ul>
+        <li>Tiger</li>
+        <li>Lion</li>
+        <li>Elephant</li>
+        <li>Deer</li>
+    </ul>
+    <form action="">
+        <input type="text" name="" id="" placeholder="Enter the name">
+    </form>
+</body>
+</html>
