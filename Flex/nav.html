@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+           width: 100%;
+           height: 75px;
+           background-color: aqua;
+        }
+        nav ul{
+            display: flex;
+            justify-content: space-evenly;
+            height:inherit;
+            align-items:center;
+            list-style:none;
+        }
+        nav ul li{
+          font-size:30px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          color: red;
+          font-weight:bolder;
+        }
+
+        nav ul #active{
+            display: none;
+        }
+        nav ul #home:hover #active{
+            display: block;
+            position: absolute;
+        }
+        nav ul #home #active ul{
+            display: block;
+            border: 2px solid black;
+            width: 300px;
+            margin-left: 50px;
+            padding: 5px;
+
+        }
+
+        nav ul #home #active ul li:hover{
+            cursor:pointer;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home">Home 
+             <div id="active">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVA</li>
+                    <li>React</li>
+                </ul>
+             </div>
+             </li>
+             
+            <li id="About">About
+                <div id="active1">
+                    <ul>
+                        <li>Company</li>
+                        <li>Team</li>
+                        <li>Misson</li>
+                        <li>History</li>
+                    </ul>
+                </div>
+            </li>
+            <li id="Contact">Contact
+                <div id="active3">
+                    <ul>
+                        <li>Email</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </li>
+            <li>Help</li>
+        </ul>
+    </nav>
+</body>
+</html>

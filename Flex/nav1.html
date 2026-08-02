@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        nav{
+            width:100%;
+            height:75px;
+            background:aqua;
+        }
+
+        nav ul{
+            display:flex;
+            justify-content:space-evenly;
+            align-items:center;
+            height:inherit;
+            list-style:none;
+        }
+
+        nav ul li{
+            font-size:30px;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color:red;
+            font-weight:bold;
+            position:relative;
+            cursor:pointer;
+        }
+
+        /* Hide Dropdown */
+        .dropdown{
+            display:none;
+            position:absolute;
+            top:50px;
+            left:0;
+        }
+
+        /* Show Dropdown */
+        nav ul li:hover .dropdown{
+            display:block;
+        }
+
+        /* Dropdown List */
+        .dropdown ul{
+            display:block;
+            width:220px;
+            background:white;
+            border:2px solid black;
+            list-style:none;
+        }
+
+        .dropdown ul li{
+            padding:10px;
+            font-size:22px;
+            color:black;
+            border-bottom:1px solid gray;
+        }
+
+        .dropdown ul li:hover{
+            background:black;
+            color:white;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+
+        <li>Home
+            <div class="dropdown">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Java</li>
+                    <li>React</li>
+                </ul>
+            </div>
+        </li>
+
+        <li>About
+            <div class="dropdown">
+                <ul>
+                    <li>Company</li>
+                    <li>Team</li>
+                    <li>Mission</li>
+                    <li>History</li>
+                </ul>
+            </div>
+        </li>
+
+        <li>Contact
+            <div class="dropdown">
+                <ul>
+                    <li>Email</li>
+                    <li>Phone</li>
+                    <li>Address</li>
+                    <li>Support</li>
+                </ul>
+            </div>
+        </li>
+
+        <li>Help
+            <div class="dropdown">
+                <ul>
+                    <li>FAQs</li>
+                    <li>Documentation</li>
+                    <li>Feedback</li>
+                    <li>Live Chat</li>
+                </ul>
+            </div>
+        </li>
+
+    </ul>
+</nav>
+
+</body>
+</html>
